@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		369C8A7228FF5BFF00F3769A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 369C8A7128FF5BFF00F3769A /* main.cpp */; };
+		369C8A7B28FF5C0B00F3769A /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369C8A7928FF5C0B00F3769A /* Metal.framework */; };
+		369C8A7C28FF5C0B00F3769A /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369C8A7A28FF5C0B00F3769A /* MetalKit.framework */; };
+		369C8A7E28FF5C0F00F3769A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369C8A7D28FF5C0F00F3769A /* Foundation.framework */; };
+		369C8A8128FF5C4700F3769A /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 369C8A7F28FF5C4700F3769A /* AppDelegate.cpp */; };
+		369C8A8428FF5DFE00F3769A /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 369C8A8228FF5DFE00F3769A /* Renderer.cpp */; };
+		369C8A8628FF6E9300F3769A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 369C8A8528FF6E9300F3769A /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,14 @@
 /* Begin PBXFileReference section */
 		369C8A6E28FF5BFF00F3769A /* Triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Triangle; sourceTree = BUILT_PRODUCTS_DIR; };
 		369C8A7128FF5BFF00F3769A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		369C8A7928FF5C0B00F3769A /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		369C8A7A28FF5C0B00F3769A /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		369C8A7D28FF5C0F00F3769A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		369C8A7F28FF5C4700F3769A /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		369C8A8028FF5C4700F3769A /* AppDelegate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppDelegate.hpp; sourceTree = "<group>"; };
+		369C8A8228FF5DFE00F3769A /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		369C8A8328FF5DFE00F3769A /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		369C8A8528FF6E9300F3769A /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369C8A7E28FF5C0F00F3769A /* Foundation.framework in Frameworks */,
+				369C8A7B28FF5C0B00F3769A /* Metal.framework in Frameworks */,
+				369C8A7C28FF5C0B00F3769A /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +60,7 @@
 			children = (
 				369C8A7028FF5BFF00F3769A /* Triangle */,
 				369C8A6F28FF5BFF00F3769A /* Products */,
+				369C8A7828FF5C0B00F3769A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +76,23 @@
 			isa = PBXGroup;
 			children = (
 				369C8A7128FF5BFF00F3769A /* main.cpp */,
+				369C8A8028FF5C4700F3769A /* AppDelegate.hpp */,
+				369C8A7F28FF5C4700F3769A /* AppDelegate.cpp */,
+				369C8A8228FF5DFE00F3769A /* Renderer.cpp */,
+				369C8A8328FF5DFE00F3769A /* Renderer.hpp */,
+				369C8A8528FF6E9300F3769A /* Shaders.metal */,
 			);
 			path = Triangle;
+			sourceTree = "<group>";
+		};
+		369C8A7828FF5C0B00F3769A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				369C8A7D28FF5C0F00F3769A /* Foundation.framework */,
+				369C8A7928FF5C0B00F3769A /* Metal.framework */,
+				369C8A7A28FF5C0B00F3769A /* MetalKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369C8A8628FF6E9300F3769A /* Shaders.metal in Sources */,
+				369C8A8428FF5DFE00F3769A /* Renderer.cpp in Sources */,
+				369C8A8128FF5C4700F3769A /* AppDelegate.cpp in Sources */,
 				369C8A7228FF5BFF00F3769A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +277,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5J64VS4M5;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp-extensions",
+					"metal-cpp",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +291,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5J64VS4M5;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp-extensions",
+					"metal-cpp",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
